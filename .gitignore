@@ -1,0 +1,28 @@
+# IDE and system files
+.idea/
+.vscode/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Large checkpoints, models and weights
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Dataset and audio files
+raw/
+raw_sliced/
+*.wav
+*.flac
+*.mp3
+infer_out/
+results/
+**/__pycache__/
