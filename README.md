@@ -31,6 +31,7 @@ The pipeline consists of three primary components: a preprocessing module, a sha
 ### 1. Preprocessing
 *   **Audio Slicing**: Raw audio inputs are sliced into 5-second chunks using `audio-slicer`.
 *   **MelSpectrogram Extraction**: The sliced audio is converted to a MelSpectrogram. The Mel Scale is selected because it reflects non-linear human pitch perception, emphasizing lower frequencies where humans have higher resolution:
+    
     $$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
     where $f$ is the frequency in Hz.
 
@@ -41,6 +42,7 @@ Diffusion models resolve these issues by gradually corrupting the input MelSpect
 
 #### Training
 During training, the diffusion process operates on the MelSpectrogram ($y_t$) using a Kullback–Leibler (KL) divergence loss at each step:
+
 $$\mathcal{L}_{\text{recon}} = D_{\text{KL}}(q(y_t \mid y_{t-1}) \parallel p_{\theta}(y_{t-1} \mid y_t))$$
 $$\mathcal{L}_{\text{total}} = \sum_{t=1}^T \mathcal{L}_t$$
 
