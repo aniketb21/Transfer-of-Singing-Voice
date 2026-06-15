@@ -1,8 +1,8 @@
 # Transfer of Singing Voice
 
-This project is a **Singing Voice Conversion** system based on shallow diffusion, designed to transfer a singing voice onto a target singer (in this project, me!) irrespective of the depth of the voice, pitch, language, or accent. 
+This system is a **Singing Voice Conversion** system based on shallow diffusion, designed to transfer a singing voice onto a target singer (here, me!) irrespective of the depth of the voice, pitch, language, or accent. 
 
-**Note: This project was done in Spring of 2023 when I was a student at Stanford University as part of CS275B (Computational Music Analysis), and uploaded to GitHub in 2026**
+This system was built in Spring 2023 at Stanford University
 
 
 ## Audio Demos & Results
